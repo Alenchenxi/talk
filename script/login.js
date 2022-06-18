@@ -16,7 +16,7 @@ $('.user-form').onsubmit = async (e) => {
         alert('登陆成功，点击确认后跳转到首页');
         const pwd = await loginPwdValidator;
         await API.login({ loginId: loginIdValidator.inp.value, loginPwd: pwd.inp.value })
-        location.href = `../${BASE_URL}/index.html`;
+        location.href = `../talk/index.html`;
     }
     else {
         alert('登陆失败,请检查帐号和密码')
