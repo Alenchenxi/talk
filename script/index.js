@@ -5,7 +5,7 @@
     //验证是否登陆
     if (!userObj) {
         alert('未登录，或登录已过期，请重新登陆');
-        location.href = '../login.html';
+        location.href = `../${BASE_URL}/login.html`;
         return
     }
     const doms = {
@@ -48,7 +48,7 @@
         //注销
         doms.close.onclick = () => {
             API.loginOut();
-            location.href = '../login.html';
+            location.href = `../${BASE_URL}/login.html`;
         }
         //发送消息
         const inp = doms.chatForm.querySelector('input');

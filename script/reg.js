@@ -30,7 +30,7 @@ $('.user-form').onsubmit = async (e) => {
     const result = await Validater.validate(loginIdValidator, loginPwdValidator, nicknameValidator, loginPwdConfirmValidator);
     if (result) {
         alert('注册成功，点击确认后跳转到登陆界面')
-        location.href = '../login.html';
+        location.href = `../${BASE_URL}/login.html`;
     }
     else {
         alert('注册失败,请重新注册')
