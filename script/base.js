@@ -1,1 +1,1 @@
-const BASE_URL = '/talk';
+const BASE_URL = 'talk';
